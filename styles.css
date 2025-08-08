@@ -1,0 +1,37 @@
+body {
+  margin: 25px;
+  background-color: rgb(19, 25, 205);
+  color: white;
+  font-family: serif;
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.header {
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: darkblue;
+}
+
+.main-sidebar {
+    background-color: cornflowerblue;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+
+/* Applies to all elements with <... class="someclass"> specified. */
+/* .someclass { color: red; } */
+
+/* Applies to the element with <... id="someid"> specified. */
+/* #someid { color: green; } */
