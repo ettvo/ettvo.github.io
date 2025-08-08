@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="nightmode.css">
-  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Evelyn Thanh-Thao Vo">
+  <meta name="description" content="Welcome to my website!">
+  <meta name="keywords" content="Back-end, Full-stack, HTML, CSS, JavaScript">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Evelyn Vo</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> 
 </head>
 <body>
+
+<div class="main-sidebar" style="display:none" id="directorySidebar">
+  <button class="main-sidebar-button"
+  onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div id="main">
+
+<div class="header">
+  <button id="open-sidebar-button" class="main-open-sidebar" onclick="w3_open()">&#9776;</button>
+  <div class="container">
+    <h1>Evelyn Vo</h1>
+  </div>
+</div>
+
+
 
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
