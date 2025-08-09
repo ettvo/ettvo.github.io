@@ -10,6 +10,7 @@ h1 {
   font-size: 35px;
   font-weight: normal;
   margin-top: 5px;
+  text-align: center;
 }
 
 p {
@@ -27,6 +28,20 @@ p {
     background-color: cornflowerblue;
     font-size: 16px;
     color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* #sidebar-link {
+
+} */
+
+/* #directorySidebar {
+
+} */
+
+#main-sidebar-button {
+
 }
 
 
