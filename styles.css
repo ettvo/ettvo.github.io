@@ -224,6 +224,14 @@ body {
     padding-top: 8px;
     padding-bottom: 8px;
     /* font-size: inherit; */
+
+    img {
+        width: 100px; 
+        height: 100px; 
+        object-fit: contain;
+        display: inline-flex;
+        mix-blend-mode: multiply;
+    }
     
 }
 

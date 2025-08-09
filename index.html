@@ -9,36 +9,22 @@
   <script src="script.js" defer></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Evelyn Vo</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> 
+  <link rel="icon" type="image/x-icon" href="img/heart_icon.png"> 
+  <!-- might remove icon later to replace with jpg; takes too long to load -->
 </head>
 
 <body>
-
-<!-- <div class="main-sidebar" id="directorySidebar">
-  <div class="main-sidebar-contents">
-    <h1>Directory</h1>
-    <a href="#" class="sidebar-link">About</a><br/>
-    <a href="#" class="sidebar-link">Experience</a><br>
-    <a href="#" class="sidebar-link">Education</a><br>
-    <a href="#" class="sidebar-link">Projects</a><br>
-    <a href="#" class="sidebar-link">Skills</a><br>
-    <a href="#" class="sidebar-link">Resume</a><br>
-    <div id="sidebar-footer">
-      <p>Bottom t</p>
-    </div>
-  </div>
-</div> -->
 
 <div class="main">
   <div class="main-sidebar" id="directorySidebar">
     <div class="main-sidebar-contents">
       <h1>Directory</h1>
-      <a href="#about" class="sidebar-link">About</a><br/>
-      <a href="#experience" class="sidebar-link">Experience</a><br>
-      <a href="#education" class="sidebar-link">Education</a><br>
-      <a href="#projects" class="sidebar-link">Projects</a><br>
-      <a href="#skills" class="sidebar-link">Skills</a><br>
-      <a href="#resume" class="sidebar-link">Resume</a><br>
+      <a href="#above_about" class="sidebar-link">About</a><br/>
+      <a href="#above_experience" class="sidebar-link">Experience</a><br>
+      <a href="#above_education" class="sidebar-link">Education</a><br>
+      <a href="#above_projects" class="sidebar-link">Projects</a><br>
+      <a href="#above_skills" class="sidebar-link">Skills</a><br>
+      <a href="#above_resume" class="sidebar-link">Resume</a><br>
       <div id="sidebar-footer">
         <p>Bottom t</p>
       </div>
@@ -62,7 +48,7 @@
   
 
       <div class="divider">
-        <img src="img/page_divider.png" alt="Page divider" class="divider">
+        <img src="img/page_divider.png" alt="Page divider" class="divider" id="above_about">
       </div>
 
       <div class="subsection" id="about">
@@ -71,7 +57,7 @@
       </div>
 
       <div class="divider">
-        <img src="img/line_divider.png" alt="Line divider" class="divider">
+        <img src="img/line_divider.png" alt="Line divider" class="divider" id="above_experience">
       </div>
 
       <div class="subsection" id="experience">
@@ -80,32 +66,39 @@
       </div>
 
       <div class="divider">
-        <img src="img/line_divider.png" alt="Line divider" class="divider">
+        <img src="img/line_divider.png" alt="Line divider" class="divider" id="above_education">
       </div>
 
       <div class="subsection" id="education">
         <h2>Education</h2>
         <p>Bottom text</p>
+        <img src="img/berkeley.png" alt="UC Berkeley">
       </div>
+
       <div class="divider">
-        <img src="img/line_divider.png" alt="Line divider" class="divider">
+        <img src="img/line_divider.png" alt="Line divider" class="divider" id="above_projects">
       </div>
 
       <div class="subsection" id="projects">
         <h2>Projects</h2>
         <p>Bottom text</p>
       </div>
+
       <div class="divider">
-        <img src="img/line_divider.png" alt="Line divider" class="divider">
+        <img src="img/line_divider.png" alt="Line divider" class="divider" id="above_skills">
       </div>
 
       <div class="subsection" id="skills">
         <h2>Skills</h2>
-        <p>Bottom text</p>
+        <p>Languages: Java, Python, C, SQL, Ruby on Rails, RISC-V Assembly, HTML, CSS, JavaScript, JSON</p>
+        <!-- <p>Frameworks and Libraries:</p> -->
+        <p>Technologies and Tools: Git (version control system), Vim, Jupyter, Snowflake, VSCode, Eclipse, IntelliJ</p>
+        <p>Testing: JUnit, PyTest, Unittest (PyUnit), Doctest, Behave, Cucumber, Capybara, GDB</p>
+        <!-- Behave (Python) [testing tools]-->
       </div>
 
       <div class="divider">
-        <img src="img/line_divider.png" alt="Line divider" class="divider">
+        <img src="img/line_divider.png" alt="Line divider" class="divider" id="above_resume">
       </div>
 
       <div class="subsection" id="resume">
@@ -116,6 +109,11 @@
       <div class="divider">
         <img src="img/page_divider.png" alt="Page divider" class="divider">
       </div>
+
+      <p>Made using HTML and CSS by Evelyn Vo.</p>
+      <p>Hosted via Github.</p>
+      <br/>
+      <br/>
     </div>
   </div>
 
