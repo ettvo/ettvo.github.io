@@ -2,6 +2,7 @@ body {
   background-color: #fff1e6;
   color: #023047;
   font-family: serif;
+  overflow-x: hidden;
 }
 
 /* Applies to all <h1>...</h1> elements. */
@@ -16,18 +17,20 @@ p {
 }
 
 .header {
-    background-color: aquamarine;
+    background-color: inherit;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     color: 012A4A;
     padding-top: 8px;
-    padding-bottom: 8px;
+    /* padding-bottom: 8px; */
     padding-left: 8px;
     padding-right: 8px;
     /* top: 0;
     left: 0;
     right: 0; */
-    display: flex-box;
+    display: inline-flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .main-sidebar {
@@ -44,7 +47,7 @@ p {
     overflow-x: hidden;
     padding-top: 16px;
     height: 100vh;
-    display: flex; 
+    display: inline-flex; 
     flex-direction: column; 
     /* justify-content: center;  */
     margin: 0 auto; 
@@ -70,6 +73,12 @@ p {
 }
 
 .contact-info {
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    /* padding-bottom: 8px; */
+    text-align: center;
 
 }
 
@@ -77,7 +86,7 @@ p {
     width: 50px; 
     height: 50px; 
     object-fit: contain;
-    display: inline;
+    display: inline-flex;
     mix-blend-mode: color-burn; 
 }
 
@@ -88,6 +97,25 @@ p {
 
 #sidebar-footer {
     margin-top: auto;
+}
+
+.line_divider {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.line_divider img {
+    width: 80%;
+    height: auto;
+    /* aspect-ratio: 1; */
+    overflow-x: hidden;
+    object-fit: contain;
+    /* zoom: 50%; */
+    /* mix-blend-mode: color-burn;  */
+    padding: 0%;
+    margin: inherit;
 }
 
 /* #directorySidebar {
