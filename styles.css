@@ -1,26 +1,65 @@
+/* Acknowledgement = colored blocks, Thunky / Mantige for lively headers, History Jumper for signing name */
+
+@font-face {
+    font-family: Acknowledgement;
+    src: url("fonts/Acknowledgement.otf");
+}
+
+@font-face {
+    font-family: Allura;
+    src: url("fonts/Allura-Regular.otf");
+}
+
+@font-face {
+    font-family: Ananda;
+    src: url("fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf.otf");
+}
+
+@font-face {
+    font-family: Balige;
+    src: url("fonts/Balige - Personal Use.otf");
+}
+
+@font-face {
+    font-family: History_Jumper;
+    src: url("fonts/History Jumper.otf");
+}
+
+@font-face {
+    font-family: Mantige;
+    src: url("fonts/Mantige DEMO.otf");
+}
+
+@font-face {
+    font-family: Mirage_bold;
+    src: url("fonts/MADE Mirage Bold PERSONAL USE.otf");
+}
+
+@font-face {
+    font-family: Mirage_medium;
+    src: url("fonts/MADE Mirage Medium PERSONAL USE.otf");
+}
+
+@font-face {
+    font-family: Village;
+    src: url("fonts/Oriental Village.otf");
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url("fonts/Pacifico.ttf");
+}
+
+@font-face {
+    font-family: Thunky;
+    src: url("fonts/Thunky DEMO.otf");
+}
+
 body {
   background-color: #fff1e6;
   color: #023047;
-  font-family: serif;
   overflow-x: hidden;
   min-height: 100dvh;
-}
-
-h1 {
-  font-size: 36px;
-  font-weight: normal;
-  text-align: center;
-}
-
-
-h2 {
-  font-size: 28px;
-  text-align: center;
-}
-
-p {
-    font-size: 16px;
-
 }
 
 /* Sidebar */
@@ -29,7 +68,7 @@ p {
     background-color: aliceblue;
     font-size: 2vw;
     color: cornflowerblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Mirage_medium;
     text-align: center;
     width: 20vw;
     margin: auto;
@@ -87,8 +126,8 @@ p {
 
 .header {
     background-color: inherit;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+    font-family: Thunky;
+    /* font-size: inherit; */
     color: #012A4A;
     padding-top: 8px;
     padding-left: 8px;
@@ -134,6 +173,19 @@ p {
 .main-contents {
     position: relative;
     display: contents;
+    h1 {
+        font-size: 40px;
+        font-family: Mantige;
+        text-align: center;
+    }
+    h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+        font-family: Mirage_medium;
+    }
     /* margin: auto; */
     /* margin-left: 25%; */
 }
@@ -162,18 +214,20 @@ p {
     align-items: center;
     padding-top: 8px;
     padding-bottom: 8px;
-    h1 {
-        text-align: center;
-    }
-    p {
-        text-align: left;
-    }
+    /* font-size: inherit; */
+    
 }
 
-@media screen and (max-height: 450px) {
+
+#name {
+    font-family: Pacifico;
+    /* font-family: Allura; */
+}
+
+/* @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
-}
+} */
 
 /* Applies to all elements with <... class="someclass"> specified. */
 /* .someclass { color: red; } */
