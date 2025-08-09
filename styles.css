@@ -200,11 +200,15 @@ body {
     img {
         position: relative;
         width: 100%;
-        height: auto;
+        height: 10vh;
         overflow-x: hidden;
         object-fit: contain;
+        mix-blend-mode: multiply;
+        /* mix-blend-mode: color-burn;  */
     }
 }
+
+
 
 .subsection {
     display: block;
