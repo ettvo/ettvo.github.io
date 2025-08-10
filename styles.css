@@ -36,6 +36,11 @@
 }
 
 @font-face {
+    font-family: Mirage_black;
+    src: url("fonts/MADE Mirage Black PERSONAL USE.otf");
+}
+
+@font-face {
     font-family: Mirage_medium;
     src: url("fonts/MADE Mirage Medium PERSONAL USE.otf");
 }
@@ -65,9 +70,9 @@ body {
 /* Sidebar */
 
 .main-sidebar {
-    background-color: aliceblue;
+    background-color: #EDAFB8;
     font-size: 2vw;
-    color: cornflowerblue;
+    color: whitesmoke;
     font-family: Mirage_medium;
     text-align: center;
     width: 20vw;
@@ -79,6 +84,7 @@ body {
     margin: 0;
     /* bottom: 0;  */
     overflow-x: hidden;
+    overflow-y: hidden;
     padding-top: 16px;
     height: 100vh;
     display: inline-flex;
@@ -87,15 +93,20 @@ body {
     /* justify-content: center;  */
     /* border-right: darkblue; */
     border-style: ridge;
+    vertical-align: middle;
 }
 
 .main-sidebar-contents {
     position: sticky; 
+    display: flexbox;
     top: 0; 
+    /* padding-bottom: 2vh; */
     width: auto; 
+    vertical-align: auto;
     /* max-height: 100vh;  */
     /* overflow: auto; */
     box-sizing: border-box;
+    /* justify-content: center; */
     h1 {
         font-size: 2.5vw;
     }
@@ -103,39 +114,55 @@ body {
         /* white-space: nowrap; */
         padding-top: 1vh;
         padding-bottom: 1vh;
-        /* vertical-align: middle; */
+        vertical-align: middle;
         color: inherit;
         background-color: inherit;
-        text-decoration:dashed;
-        outline: 3px dashed; 
+        /* text-decoration:wavy; */
+        text-decoration-line: none;
+        /* outline: 3px dashed;  */
         width: 100%;
         display: grid;
+        /* display: block; */
 
     }
     a:hover {
-        color: #1607ea;
+        color:brown;
+    }
+    img {
+        height: 8vh;
+        width: auto; 
+        aspect-ratio: 1;
+        mix-blend-mode: color-burn;
     }
 }
 
-#sidebar-footer {
-    margin-top: auto;
+#sidebar-footer-icon {
+    bottom: 0;
 }
+
 
 
 /* Header */ 
 
 .header {
     background-color: inherit;
-    font-family: Thunky;
+    /* font-family: Thunky; */
+    font-family: Mantige_medium;
     /* font-size: inherit; */
     color: #012A4A;
-    padding-top: 8px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    /* padding-top: 8px;
     padding-left: 8px;
-    padding-right: 8px;
+    padding-right: 8px; */
     /* display: inline-block; */
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
+    img {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
 }
 
 
@@ -181,11 +208,18 @@ body {
     h2 {
         font-size: 40px;
         text-align: center;
+        font-family: Mirage_black;
     }
     p {
         font-size: 20px;
         font-family: Mirage_medium;
         text-align: center;
+        /* display: grid; */
+    }
+    img {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        /* display: grid; */
     }
     /* margin: auto; */
     /* margin-left: 25%; */
@@ -224,7 +258,6 @@ body {
     padding-top: 8px;
     padding-bottom: 8px;
     /* font-size: inherit; */
-
     img {
         width: 100px; 
         height: 100px; 
@@ -232,8 +265,22 @@ body {
         display: inline-flex;
         mix-blend-mode: multiply;
     }
+    ul {
+        list-style-type: "■ ";
+    }
+    li {
+        font-size: 16px;
+        font-family: Mirage_medium;
+        text-align: left;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
     
 }
+
+/* .job-list {
+    list-style-type: "■ ";
+} */
 
 
 #name {
@@ -255,5 +302,5 @@ body {
 /*
 Colors: #F4E4DC, fff1e6 [cream]; 023047, 012A4A [blue]
 
-
+TODO: adjust px / viewing for mobile
 */
