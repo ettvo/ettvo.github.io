@@ -96,6 +96,25 @@ body {
     vertical-align: middle;
 }
 
+.sidebar-footer {
+    position: relative;
+    bottom: 2vh;
+    /* padding-bottom: 10vh; */
+    background-color: inherit;
+    /* background-color: red; */
+    img {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        width: 4vw;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        aspect-ratio: 1;
+        object-fit: contain;
+        display: inline-flex;
+    }
+}
+
 .main-sidebar-contents {
     position: sticky; 
     display: flexbox;
@@ -127,12 +146,6 @@ body {
     }
     a:hover {
         color:brown;
-    }
-    img {
-        height: 8vh;
-        width: auto; 
-        aspect-ratio: 1;
-        mix-blend-mode: color-burn;
     }
 }
 
