@@ -143,15 +143,14 @@ body {
         /* white-space: nowrap; */
         padding-top: 1vh;
         padding-bottom: 1vh;
-        vertical-align: middle;
+        /* vertical-align: middle; */
         color: inherit;
         background-color: inherit;
         /* text-decoration:wavy; */
         text-decoration-line: none;
         /* outline: 3px dashed;  */
         width: 100%;
-        display: grid;
-        /* display: block; */
+        display: block;
 
     }
     a:hover {
