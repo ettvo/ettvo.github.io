@@ -276,11 +276,18 @@ body {
     font-family: Pacifico;
 }
 
+.work_tab_buttons {
+    float: left;
+    width: 30%;
+}
+
 .work_tab {
     background-color: #fff1e6;
     color: #012A4A; 
     width: 100%;
-    display: block;
+    /* display: inline-block; */
+    display: contents;
+    position: relative;
     h1 {
         text-align: center;
     }
@@ -301,19 +308,18 @@ body {
         padding-bottom: 2vh;
     }
     button {
-        display: block;
-        display: relative;
+        /* display: block; */
+        display: contents;
         background-color: inherit;
         padding-top: 3vh;
         padding-bottom: 3vh;
         border: 2px solid transparent;
-        /* border: none; */
         outline: none;
         text-align: left;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         position: block;
-        background-color: #fff1e6;
+        background-color: inherit;
     }
     button::after,
     button::before {
@@ -339,39 +345,24 @@ body {
         bottom: -4px;
         left: 0;
     }
-}
-
-/* Previous button effect
-    button::before,
-    button::after {
-        border: 0 solid transparent;
-        transition: all 0.5s;
-        content: '';
-        height: 0;
-        position: absolute;
-        width: 24px;
-    }
-    button::before {
+    /* #selected {
+        outline: none;
         border-top: 2px solid #263059;
+        border-bottom: 2px solid #263059;
+        backface-visibility: hidden;
+        transition: width 0.3s ease-in-out;
+        border: 2px solid #263059;
+        width: 100%;
         right: 0;
         top: -4px;
-    }
-    button::after {
-        border-bottom: 2px solid #263059;
         bottom: -4px;
         left: 0;
-    }
-    button:hover::before,
-    button:hover::after {
-        width: 100%;
-    }
-    button:hover {
-        background-color: #ddd;
     } */
+}
 
 .tabcontent {
     display: none;
-    float: right;
+    float: left;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 12px;

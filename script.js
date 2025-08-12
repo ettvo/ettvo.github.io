@@ -29,13 +29,13 @@ function openWork(evt, workplace) {
 // document.getElementById("defaultOpenWork").click();
 
 
-function openCity(evt, workplace) {
+function openTab(evt, workplace) {
   var i, tabs, tablinks;
   tabs = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabs.length; i++) {
     tabs[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("work_tab_buttons");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
