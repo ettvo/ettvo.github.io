@@ -281,7 +281,6 @@ body {
     color: #012A4A; 
     width: 100%;
     display: block;
-
     h1 {
         text-align: center;
     }
@@ -292,26 +291,61 @@ body {
         text-align: left;
         padding-left: 2vw;
     }
+    img {
+        width: 8vw;
+        aspect-ratio: 100%;
+        object-fit: contain;
+        display: flex;
+        mix-blend-mode: multiply;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
     button {
         display: block;
+        display: relative;
         background-color: inherit;
-        padding-top: 36px;
-        padding-bottom: 36px;
-        border: none;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        border: 2px solid transparent;
+        /* border: none; */
         outline: none;
         text-align: left;
         cursor: pointer;
-        transition: 0.3s;
-        position: relative;
+        transition: all 0.3s ease-in-out;
+        position: block;
         background-color: #fff1e6;
     }
-    /* button.active {
-        background-color: #edafb887;
-    } */
+    button::after,
+    button::before {
+        backface-visibility: hidden;
+        border: 2px solid transparent;
+        /* border: 2px solid #263059; */
+        content: '';
+        display: block;
+        margin: 0 auto;
+        /* position: block; */
+        transition: all 0.3s ease-in-out;
+        width: 1vw;
+        height: 0;
+    }
+    button:hover::after,
+    button:hover::before {
+        backface-visibility: hidden;
+        transition: width 0.3s ease-in-out;
+        border: 2px solid #263059;
+        width: 100%;
+        right: 0;
+        top: -4px;
+        bottom: -4px;
+        left: 0;
+    }
+}
+
+/* Previous button effect
     button::before,
     button::after {
         border: 0 solid transparent;
-        transition: all 0.3s;
+        transition: all 0.5s;
         content: '';
         height: 0;
         position: absolute;
@@ -333,15 +367,7 @@ body {
     }
     button:hover {
         background-color: #ddd;
-    }
-    img {
-        width: 8vw;
-        aspect-ratio: 100%;
-        object-fit: contain;
-        display: flex;
-        mix-blend-mode: multiply;
-    }
-}
+    } */
 
 .tabcontent {
     display: none;
