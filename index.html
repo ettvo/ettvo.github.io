@@ -43,11 +43,6 @@
         <a href="obj/resume.pdf" target="_blank"><img src="img/resume.jpg"></a>
       </div>
 
-      <!-- <div class="divider">
-        <img src="img/line_divider.jpg" alt="Line divider" class="divider">
-      </div> -->
-    
-
       <div class="divider">
         <img src="img/page_divider.jpg" alt="Page divider" class="divider" id="above_about">
       </div>
@@ -64,45 +59,34 @@
       </div>
 
       <div class="subsection" id="experience">
-
-        <div class="work_tab">
-          <button class="tablinks" onclick="openCity(event, '2ndWatch')"><img src="img/2nd_watch.png" alt="2nd Watch"></button>
-          <button class="tablinks" onclick="openCity(event, 'BerkeleyIT')"><img src="img/berkeley.jpg" alt="UC Berkeley IT"></button>
-        </div>
-
-        <div id="2ndWatch" class="tabcontent">
-          <h3>2nd Watch</h3>
-          <p>London is the capital city of England.</p>
-        </div>
-
-        <div id="BerkeleyIT" class="tabcontent">
-          <h3>UC Berkeley IT</h3>
-          <p>London is the capital city of England.</p>
-        </div>
-
-
-      </div>
-
-      <div class="subsection" id="experience">
         <h2>Work Experience</h2>
-        <img src="img/2nd_watch.png" style="display:inline-block">
-        <p style="display:inline-block">In 2023, I interned at 2nd Watch (now known as Ollion), a data consulting firm that provides cloud solutions and information technology services to enterprises. I had so much fun learning and collaborating with the team there! While I was there, I:</p>
-        <ul>
-          <li>Collaborated with data engineers and cloud architects to design and deploy an automated AWS infrastructure provisioning tool using Python and the AWS Serverless Framework, enabling secure, client-specific resource creation to support scalable data workflows.</li>
-          <li>Partnered with the client’s data team to automate and optimize their ETL pipeline for SQL Server data ingestion using Python, reducing load time by 72% and enhancing performance for downstream analytics.</li>
-          <li>Worked closely with HR and operations teams to develop an interactive hiring analytics dashboard in Power BI using DAX, providing visibility into recruitment trends and referral bonus tracking; automated data refresh via REST API integration.</li>
-          <li>Contributed to team’s intellectual capital by drafting internal documentation on pipeline optimization strategies, tooling, and development workflows. Participated in team training sessions and applied hands-on skills in Snowflake, SQL, Git, and AWS Cloud Practitioner topics, with a focus on cloud-based data architecture, modeling, and analytics delivery.</li>
-        </ul>
-        <br/>
-        <img src="img/berkeley.jpg" alt="UC Berkeley" style="display: inline-block">
-        <p display="grid">In 2022, I worked as an IT technician on the UC Berkeley IT team. While I was there, I:</p>
-        <ul>
-          <li>Led new hire training initiatives, overseeing curriculum development and delivery. Partnered with HR and IT leadership to streamline onboarding processes and ensure compliance with security protocols.</li>
-          <li>Managed critical technical documentation for departmental projects and systems, supporting cross-functional teams in the execution of long-term IT infrastructure and operational initiatives.</li>
-          <li>Delivered frontline IT support leveraging ServiceNow, Active Directory, and network administration tools. Ensured prompt issue resolution, improved service efficiency, and contributed to maintaining enterprise-wide system integrity.</li>
-        </ul>
-      
+        <div class="work_tab">
+          <button class="tablinks" onclick="openCity(event, '2ndWatch')" id="defaultOpenWork"><img src="img/2nd_watch.png" alt="2nd Watch"></button>
+          <br/>
+          <!-- <br/> -->
+          <button class="tablinks" onclick="openCity(event, 'BerkeleyIT')"><img src="img/berkeley.jpg" alt="UC Berkeley IT"></button>
+          <div id="2ndWatch" style="display: contents" class="tabcontent">
+            <h3>Data Insights Intern | 2nd Watch</h3>
+            <p>In 2023, I interned at 2nd Watch (now known as Ollion), a data consulting firm that provides cloud solutions and information technology services to enterprises. I had so much fun learning and collaborating with the team there! While I was there, I:</p>
+            <ul>
+              <li>Collaborated with data engineers and cloud architects to design and deploy an automated AWS infrastructure provisioning tool using Python and the AWS Serverless Framework, enabling secure, client-specific resource creation to support scalable data workflows.</li>
+              <li>Partnered with the client’s data team to automate and optimize their ETL pipeline for SQL Server data ingestion using Python, reducing load time by 72% and enhancing performance for downstream analytics.</li>
+              <li>Worked closely with HR and operations teams to develop an interactive hiring analytics dashboard in Power BI using DAX, providing visibility into recruitment trends and referral bonus tracking; automated data refresh via REST API integration.</li>
+              <li>Contributed to team’s intellectual capital by drafting internal documentation on pipeline optimization strategies, tooling, and development workflows. Participated in team training sessions and applied hands-on skills in Snowflake, SQL, Git, and AWS Cloud Practitioner topics, with a focus on cloud-based data architecture, modeling, and analytics delivery.</li>
+            </ul>
+          </div>
+          <div id="BerkeleyIT" class="tabcontent">
+            <h3>Training Lead and IT Technician | UC Berkeley IT</h3>
+            <p>In 2022, I worked as an IT technician on the UC Berkeley IT team. While I was there, I:</p>
+            <ul>
+              <li>Led new hire training initiatives, overseeing curriculum development and delivery. Partnered with HR and IT leadership to streamline onboarding processes and ensure compliance with security protocols.</li>
+              <li>Managed critical technical documentation for departmental projects and systems, supporting cross-functional teams in the execution of long-term IT infrastructure and operational initiatives.</li>
+              <li>Delivered frontline IT support leveraging ServiceNow, Active Directory, and network administration tools. Ensured prompt issue resolution, improved service efficiency, and contributed to maintaining enterprise-wide system integrity.</li>
+            </ul>
+          </div>
+        </div>
       </div>
+
       <div class="divider">
         <img src="img/line_divider.jpg" alt="Line divider" class="divider" id="above_education">
       </div>

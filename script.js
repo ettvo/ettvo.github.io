@@ -25,3 +25,21 @@ function openWork(evt, workplace) {
   document.getElementById(workplace).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// document.getElementById("defaultOpenWork").click();
+
+
+function openCity(evt, workplace) {
+  var i, tabs, tablinks;
+  tabs = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabs.length; i++) {
+    tabs[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  // document.getElementById(workplace).style.display = "block";
+  document.getElementById(workplace).style.display = "contents";
+  evt.currentTarget.className += " active";
+} 
