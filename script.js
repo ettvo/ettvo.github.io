@@ -43,3 +43,7 @@ function openTab(evt, workplace) {
   document.getElementById(workplace).style.display = "contents";
   evt.currentTarget.className += " active";
 } 
+
+// function onLoad() {
+//   document.getElementById("selected_button").click();
+// }
