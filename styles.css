@@ -151,10 +151,11 @@ body {
         /* outline: 3px dashed;  */
         width: 100%;
         display: block;
-
+        transition: all 0.3s ease-in-out;
     }
     a:hover {
         color:brown;
+        transform: scale(1.1);
     }
 }
 
@@ -339,11 +340,8 @@ body {
         text-align: left;
         padding-left: 2vw;
     }
-}
-
-.tablinks {
-    padding-top: 24px;
-    padding-bottom: 24px;
+        /* padding-top: 24px;
+    padding-bottom: 24px; */
     button {
         /* border: 2px dashed #012A4A; */
         display: block;
@@ -357,10 +355,13 @@ body {
         transition: 0.3s;
         /* font-size: 17px; */
         position: relative;
+        background-color: #fff1e6;
+        /* mix-blend-mode: multiply; */
     }
-    /* button::shadow {
-        background-color: rgba(232, 84, 84, 0.454);
-    } */
+    button.active {
+        background-color: #edafb887;
+
+    }
     button::before,
     button::after {
         border: 0 solid transparent;
@@ -371,12 +372,12 @@ body {
         width: 24px;
     }
     button::before {
-        border-top: 10px solid #263059;
+        border-top: 2px solid #263059;
         right: 0;
         top: -4px;
     }
     button::after {
-        border-bottom: 10px solid #263059;
+        border-bottom: 2px solid #263059;
         bottom: -4px;
         left: 0;
     }
