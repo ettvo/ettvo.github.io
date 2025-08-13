@@ -243,10 +243,11 @@ body {
 
 .subsection {
     display: block;
+    /* display: grid; */
     position: relative;
     align-items: center;
     padding-top: 0.5vh;
-    padding-bottom: 1vh;
+    padding-bottom: 5vh;
     img {
         width: 8vw;
         aspect-ratio: 100%;
@@ -391,5 +392,5 @@ body {
 /*
 Colors: #F4E4DC, fff1e6 [cream]; 023047, 012A4A [blue]
 
-TODO: adjust px / viewing for mobile
+TODO: adjust px / viewing for mobile, make each subsection GRID
 */
