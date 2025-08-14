@@ -242,7 +242,8 @@ body {
 }
 
 .subsection {
-    display: block;
+    display: flexbox;
+    justify-content: space-around;
     /* display: grid; */
     position: relative;
     align-items: center;
