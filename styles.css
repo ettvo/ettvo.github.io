@@ -219,6 +219,33 @@ body {
         padding-left: 2vw;
         padding-right: 2vw;
     }
+    a {
+        img {
+            padding-left: 0.75vw;
+            padding-right: 0.75vw;
+            width: 2vw;
+            aspect-ratio: 1;
+            height: auto;
+        }
+        img:hover {
+            mix-blend-mode: color-burn;
+        }
+    }
+    /* a {
+        font-size: 1.5vw;
+        font-family: Mirage_medium;
+        color: inherit;
+        background-color: inherit;
+        text-decoration-line: none;
+        width: 100%;
+        display: inline;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    } */
+    /* a:hover {
+        color:brown;
+        transform: scale(1.5);
+    } */
 }
 
 .divider {
@@ -277,6 +304,10 @@ body {
 #name {
     font-family: Pacifico;
 }
+
+
+
+/* Work Experience */
 
 .work_tabs {
     display: grid;
@@ -368,9 +399,101 @@ body {
 #selected_tab {
     display: contents;
 }
+
 #unselected_tab {
     display: hidden;
 }
+
+
+/* Projects */
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-items: normal; */
+    align-self: center;
+    text-align: center;
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
+}
+
+.project_card {
+    flex-shrink: 2;
+    flex-grow: 1;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: inline-flexbox;
+    background: #fff;
+    max-width: 20vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    h2 {
+        font-size: 1.5vw;
+    }
+    p {
+        font-size: 1vw;
+    }
+}
+
+.project_card:hover {
+    /* transform: scale(1.1); */
+    z-index: 1;
+}
+
+.project_contents {
+    display: none;
+}
+
+.card_link {
+    font-family: Allura;
+    font-weight: bold;
+    text-align: center;
+    /* transition: all 3s ease-in-out; */
+    /* display: transparent; */
+    display: none;
+    white-space: nowrap;
+    animation: typewriter 2s steps(13) infinite alternate,
+                blink 800ms steps(13) infinite normal;
+    border-right: 5px solid black;
+    overflow: hidden;
+}
+
+.card_link:hover::after {
+    display: inline;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+/* .card_link:hover {
+
+} */
 
 
 /* Go from zero to full opacity */

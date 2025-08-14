@@ -109,27 +109,81 @@
 
       <div class="subsection" id="projects">
         <h2>Projects</h2>
+        <p>Here are the resume project cards! If you'd like to view more, feel free to check them out here!<a href="#" target="_blank"><img src="img/link.png"></a></p>
+  
+        <br/>
+        <!-- make this grow in size too -->
+
+        <div class="cards">
+          <!-- <div class="project_card">
+            <h2>Project Title</h2>
+            <p><i>Tech Stack: top text</i></p>
+            <p><i>Tags: middle text</i></p>
+            <p>Short description</p>
+          </div> -->
+
+          <div class="project_card" onmouseover="showCard(event,'proj_card_1')">
+          <!-- <div class="project_card"> -->
+            <h2>Political Candidate ActionMap</h2>
+            <p><i>Tech Stack: Ruby on Rails, HTML, JavaScript, Agile, RESTful API</i></p>
+            <p><i>Tags: Full-stack, web-application, relational database, Agile, test-driven development</i></p>
+            <p>Short description</p>
+            <p class="card_link" id="proj_card_1">Click to read more!</p>
+            <!-- <a class="button_project_rm" href='#' target="_blank">Read More</a> -->
+          </div>
+          
+          <div class="project_card">
+            <h2>PintOS Operating System</h2>
+            <p><i>Tech Stack: C, Docker, RISC-V Assembly, Operating Systems</i></p>
+            <p><i>Tags: low-level design, system design</i></p>
+            <p>Short description</p>
+            <a class="button_project_rm" href='#' target="_blank">Read More</a>
+          </div>
+          <div class="project_card">
+            <h2>Gitlet Version Control System</h2>
+            <p><i>Tech Stack: Java</i></p>
+            <p><i>Tags: test-driven development, system design</i></p>
+            <p>Short description</p>
+            <a class="button_project_rm" href='#' target="_blank">Read More</a>
+          </div>
+          <div class="project_card">
+            <h2>ChocoPy Interpreter</h2>
+            <p><i>Tech Stack: Java, JFlex, CUP, Python</i></p>
+            <p><i>Tags: test-driven development, interpreters</i></p>
+            <p>Short description</p>
+            <a class="button_project_rm" href='#' target="_blank">Read More</a>
+          </div>
+        </div>
         
-        <div class="project_card">
+        
+        
+
+
+        <!-- make project contents hidden by default -->
+        <div class="project_contents">
           <h2>Project Title</h2>
           <p><i>Tech Stack: top text</i></p>
           <p><i>Tags: middle text</i></p>
           <p>Bottom text</p>
+          <p>Check out the code here! </p>
+          <a href="#" target="_blank"><img src="img/github.jpg"></a>
         </div>
 
-        <div class="project_card">
+        <div class="project_contents">
           <h2>Political Candidate ActionMap</h2>
           <p><i>Tech Stack: Ruby on Rails, HTML, JavaScript, Agile, RESTful API</i></p>
           <p><i>Tags: Full-stack, web-application, relational database, Agile, test-driven development</i></p>
           <p>Collaborated with 1 team member to develop and deploy full-stack web application that allows users to search for
             political candidates in a U.S. state or county. Users can aggregate, view, and share related news articles. Implemented
             in a RESTful application programming interface using Ruby on Rails with SQL and ActiveRecord ORM (relational
-            database tool) following Agile life cycle and test-driven development. Tests written with Capybara and Cucumber
+            database tool) following Agile life cycle and test-driven development. Tests written with Capybara and Cucumber.
             gems.
           </p>
+          <p>Check out the code here! </p>
+          <a href="#" target="_blank"><img src="img/github.jpg"></a>
         </div>
 
-        <div class="project_card">
+        <div class="project_contents">
           <h2>PintOS Operating System</h2>
           <p><i>Tech Stack: C, Docker, RISC-V Assembly, Operating Systems</i></p>
           <p><i>Tags: low-level design, system design</i></p>
@@ -138,19 +192,23 @@
             multithreading capabilities, alongside a conditional variable based buffer cache for speeding up I/O and an
             extensible file system with sub-directories constructed with inodes.
           </p>
+          <p>Check out the code here! </p>
+          <a href="#" target="_blank"><img src="img/github.jpg"></a>
         </div>
 
-        <div class="project_card">
+        <div class="project_contents">
           <h2>Gitlet Version Control System</h2>
           <p><i>Tech Stack: Java</i></p>
           <p><i>Tags: test-driven development, system design</i></p>
           <p>Developed Java version control system that supports Git commands such as such as git commit and git merge.
             Utilizes HashMaps and SHA1 hashes to efficiently to track file changes and commits. Developed following test-
-            driven development
+            driven development.
           </p>
+          <p>Check out the code here! </p>
+          <a href="#" target="_blank"><img src="img/github.jpg"></a>
         </div>
 
-        <div class="project_card">
+        <div class="project_contents">
           <h2>ChocoPy Interpreter</h2>
           <p><i>Tech Stack: Java, JFlex, CUP, Python</i></p>
           <p><i>Tags: test-driven development, interpreters</i></p>
@@ -159,6 +217,8 @@
             handles file input and hanging tests for a more robust development cycle. Enabled code-size and run-time metrics to
             benchmark.
           </p>
+          <p>Check out the code here! </p>
+          <a href="#" target="_blank"><img src="img/github.jpg"></a>
         </div>
       
       </div>

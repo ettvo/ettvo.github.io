@@ -47,3 +47,8 @@ function openTab(evt, workplace) {
 // function onLoad() {
 //   document.getElementById("selected_button").click();
 // }
+
+function showCard(evt, card_name) {
+  // document.getElementById(card_name).style.display = "transparent";
+  document.getElementById(card_name).style.display = "flex";
+}
