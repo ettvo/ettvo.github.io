@@ -35,6 +35,11 @@ function openWorkTab(evt, workplace) {
 // }
 
 function showProjCard(evt, card_name) {
+  tabs = document.getElementsByClassName("card_link");
+  for (i = 0; i < tabs.length; i++) {
+    tabs[i].style.visibility = "hidden";
+  }
   document.getElementById(card_name).style.visibility = "visible";
   document.getElementById(card_name).style.animation = "typewriter 2s steps(12) infinite alternate, blink 800ms steps(12) infinite normal"
+
 }
