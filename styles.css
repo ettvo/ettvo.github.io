@@ -219,18 +219,6 @@ body {
         padding-left: 2vw;
         padding-right: 2vw;
     }
-    a {
-        img {
-            padding-left: 0.75vw;
-            padding-right: 0.75vw;
-            width: 2vw;
-            aspect-ratio: 1;
-            height: auto;
-        }
-        img:hover {
-            mix-blend-mode: color-burn;
-        }
-    }
     /* a {
         font-size: 1.5vw;
         font-family: Mirage_medium;
@@ -246,6 +234,19 @@ body {
         color:brown;
         transform: scale(1.5);
     } */
+}
+
+#forwarding_proj_link {
+    img {
+        padding-left: 0.75vw;
+        padding-right: 0.75vw;
+        width: 2vw;
+        aspect-ratio: 1;
+        height: auto;
+    }
+    img:hover {
+        mix-blend-mode: color-burn;
+    }
 }
 
 .divider {
@@ -427,7 +428,7 @@ body {
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 2vh;
-    padding-bottom: 4vh;
+    padding-bottom: 2vh;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
     margin-top: 1vh;
@@ -461,12 +462,14 @@ body {
     font-weight: bold;
     text-align: center;
     /* transition: all 3s ease-in-out; */
-    /* display: transparent; */
-    display: none;
+    display: transparent;
+    /* display: none; */
     white-space: nowrap;
-    animation: typewriter 2s steps(13) infinite alternate,
-                blink 800ms steps(13) infinite normal;
+    /* animation: typewriter 2s steps(12) infinite alternate,
+                blink 800ms steps(12) infinite normal; */
     border-right: 5px solid black;
+    visibility: hidden;
+    /* visibility: visible; */
     overflow: hidden;
 }
 

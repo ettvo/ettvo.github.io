@@ -12,24 +12,10 @@
 //   document.getElementById("open-sidebar-button").style.display = "inline-block";
 // }
 
-function openWork(evt, workplace) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(workplace).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
 // document.getElementById("defaultOpenWork").click();
 
 
-function openTab(evt, workplace) {
+function openWorkTab(evt, workplace) {
   var i, tabs, tablinks;
   tabs = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabs.length; i++) {
@@ -48,7 +34,7 @@ function openTab(evt, workplace) {
 //   document.getElementById("selected_button").click();
 // }
 
-function showCard(evt, card_name) {
-  // document.getElementById(card_name).style.display = "transparent";
-  document.getElementById(card_name).style.display = "flex";
+function showProjCard(evt, card_name) {
+  document.getElementById(card_name).style.visibility = "visible";
+  document.getElementById(card_name).style.animation = "typewriter 2s steps(12) infinite alternate, blink 800ms steps(12) infinite normal"
 }
