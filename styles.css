@@ -424,7 +424,7 @@ body {
     /* justify-items: normal; */
     align-self: center;
     text-align: center;
-    width: 90%;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
     transition: all 0.3s ease-in-out;
@@ -443,7 +443,7 @@ body {
     margin-bottom: 1vh;
     display: inline-flexbox;
     background: #fff;
-    max-width: 20vw;
+    max-width: 25vw;
     border-radius: 10px;
     box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
     position: relative;
