@@ -409,7 +409,16 @@ body {
 /* Projects */
 
 .cards {
+    /* display: grid; */
     display: flex;
+    flex-direction: row;
+    transition: width 0.5s ease-in-out;
+    /* grid-template-columns: repeat(auto-fit, minmax(min(100%, max(10rem, 100%/4)), 1fr)); */
+    /* grid-template-columns: repeat(auto-fit, minmax(min(100%, max(10rem, 100%/3)), 1fr)); */
+    /* fluid columns, but max out at 3 */
+    /* gap: 2.5rem; */
+    
+
     align-items: center;
     justify-content: center;
     /* justify-items: normal; */
@@ -453,7 +462,8 @@ body {
 }
 
 .project_contents {
-    /* display: none; */
+    display: none;
+    /* display: block; */
     background: #fff;
     flex-shrink: 2;
     flex-grow: 1;
@@ -472,6 +482,7 @@ body {
     position: relative;
     overflow: hidden;
     text-align: center;
+    transition: width 0.5s ease-in-out;
     img {
         width: 3vw;
         aspect-ratio: 100%;

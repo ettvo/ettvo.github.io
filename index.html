@@ -95,7 +95,7 @@
         <img src="img/line_divider.jpg" alt="Line divider" class="divider" id="above_education">
       </div>
 
-      <div class="subsection" id="education">
+      <div class="subsection" id="education" style="text-align: center;">
         <h2>Education</h2>
         <img src="img/berkeley.jpg" alt="UC Berkeley">
         <p>I graduated in August 2024 with a Bachelor's of Arts in Computer Science from University of California, Berkeley.</p>
@@ -109,66 +109,11 @@
 
       <div class="subsection" id="projects">
         <h2>Projects</h2>
-        <p>Here are the resume project cards! If you'd like to view more, feel free to check them out here!<a href="#" target="_blank" id="forwarding_proj_link"><img src="img/link.png"></a></p>
-  
+        <!-- <p>Here are the resume project cards! If you'd like to view more, feel free to check them out here!<a href="#" target="_blank" id="forwarding_proj_link"><img src="img/link.png"></a></p> -->
+        <p>Here are the resume project cards!</p>
         <br/>
-        <!-- make this grow in size too -->
 
-        <div class="cards">
-          <!-- <div class="project_card">
-            <h2>Project Title</h2>
-            <p><i>Tech Stack: top text</i></p>
-            <p><i>Tags: middle text</i></p>
-            <p>Short description</p>
-          </div> -->
-
-          <div class="project_card" onmouseover="showProjCard(event,'proj_card_1')">
-            <h2>Political Candidate ActionMap</h2>
-            <p><i>Tech Stack: Ruby on Rails, HTML, JavaScript, Agile, RESTful API</i></p>
-            <p><i>Tags: Full-stack, web-application, relational database, Agile, test-driven development</i></p>
-            <p>A full-stack web application with a Ruby on Rails back-end design. Developed following Agile principles.</p>
-            <p class="card_link" id="proj_card_1">Click to read more!</p>
-          </div>
-          
-          <div class="project_card" onmouseover="showProjCard(event,'proj_card_2')">
-            <h2>PintOS Operating System</h2>
-            <p><i>Tech Stack: C, Docker, RISC-V Assembly, Operating Systems</i></p>
-            <p><i>Tags: low-level design, system design</i></p>
-            <p>An operating system developed in C using Docker and RISC-V Assembly.</p>
-            <p class="card_link" id="proj_card_2">Click to read more!</p>
-          </div>
-
-          <div class="project_card" onmouseover="showProjCard(event,'proj_card_3')">
-            <h2>Gitlet Version Control System</h2>
-            <p><i>Tech Stack: Java</i></p>
-            <p><i>Tags: test-driven development, system design</i></p>
-            <p>A version control system in Java that supports Git commands.</p>
-            <p class="card_link" id="proj_card_3">Click to read more!</p>
-          </div>
-          <div class="project_card" onmouseover="showProjCard(event,'proj_card_4')">
-            <h2>ChocoPy Interpreter</h2>
-            <p><i>Tech Stack: Java, JFlex, CUP, Python</i></p>
-            <p><i>Tags: test-driven development, interpreters</i></p>
-            <p>A Python interpreter developed in Java. Parses Python code and produces code via RISC-V architecture.</p>
-            <p class="card_link" id="proj_card_4">Click to read more!</p>
-          </div>
-        </div>
-        
-        
-        
-
-
-        <!-- make project contents hidden by default -->
-        <!-- <div class="project_contents">
-          <h2>Project Title</h2>
-          <p><i>Tech Stack: top text</i></p>
-          <p><i>Tags: middle text</i></p>
-          <p>Bottom text</p>
-          <p>Check out the code here! </p>
-          <a href="#" target="_blank"><img src="img/github.jpg"></a>
-        </div> -->
-
-        <div class="project_contents">
+        <div class="project_contents" id="project_contents_card_1">
           <h2>Political Candidate ActionMap</h2>
           <p><i>Tech Stack: Ruby on Rails, HTML, JavaScript, Agile, RESTful API</i></p>
           <p><i>Tags: Full-stack, web-application, relational database, Agile, test-driven development</i></p>
@@ -181,8 +126,7 @@
           <p>Check out the code here! </p>
           <a href="https://github.com/ettvo/ActionMap-Political-Map" target="_blank"><img src="img/github.jpg"></a>
         </div>
-
-        <div class="project_contents">
+        <div class="project_contents" id="project_contents_card_2">
           <h2>PintOS Operating System</h2>
           <p><i>Tech Stack: C, Docker, RISC-V Assembly, Operating Systems</i></p>
           <p><i>Tags: low-level design, system design</i></p>
@@ -194,8 +138,7 @@
           <p>Check out the code here! </p>
           <a href="https://github.com/ettvo/PintOS-Projects" target="_blank"><img src="img/github.jpg"></a>
         </div>
-
-        <div class="project_contents">
+        <div class="project_contents" id="project_contents_card_3">
           <h2>Gitlet Version Control System</h2>
           <p><i>Tech Stack: Java</i></p>
           <p><i>Tags: test-driven development, system design</i></p>
@@ -206,8 +149,7 @@
           <p>Check out the code here! </p>
           <a href="https://github.com/ettvo/Gitlet" target="_blank"><img src="img/github.jpg"></a>
         </div>
-
-        <div class="project_contents">
+        <div class="project_contents" id="project_contents_card_4">
           <h2>ChocoPy Interpreter</h2>
           <p><i>Tech Stack: Java, JFlex, CUP, Python</i></p>
           <p><i>Tags: test-driven development, interpreters</i></p>
@@ -219,6 +161,57 @@
           <p>Check out the code here! </p>
           <a href="https://github.com/ettvo/ChocoPy_Interpreter/" target="_blank"><img src="img/github.jpg"></a>
         </div>
+
+        <div class="cards">
+          <!-- <div class="project_card">
+            <h2>Project Title</h2>
+            <p><i>Tech Stack: top text</i></p>
+            <p><i>Tags: middle text</i></p>
+            <p>Short description</p>
+          </div> -->
+
+          <div class="project_card" id="proj_card_1" onmouseover="showProjCardReadMore(event,'proj_card_link_1')">
+            <h2>Political Candidate ActionMap</h2>
+            <p><i>Tech Stack: Ruby on Rails, HTML, JavaScript, Agile, RESTful API</i></p>
+            <p><i>Tags: Full-stack, web-application, relational database, Agile, test-driven development</i></p>
+            <p>A full-stack web application with a Ruby on Rails back-end design. Developed following Agile principles.</p>
+            <p class="card_link" id="proj_card_link_1">Click to read more!</p>
+          </div>
+          
+          <div class="project_card" id="proj_card_2" onmouseover="showProjCardReadMore(event,'proj_card_link_2')">
+            <h2>PintOS Operating System</h2>
+            <p><i>Tech Stack: C, Docker, RISC-V Assembly, Operating Systems</i></p>
+            <p><i>Tags: low-level design, system design</i></p>
+            <p>An operating system developed in C using Docker and RISC-V Assembly.</p>
+            <p class="card_link" id="proj_card_link_2">Click to read more!</p>
+          </div>
+
+          <div class="project_card" id="proj_card_3" onmouseover="showProjCardReadMore(event,'proj_card_link_3')">
+            <h2>Gitlet Version Control System</h2>
+            <p><i>Tech Stack: Java</i></p>
+            <p><i>Tags: test-driven development, system design</i></p>
+            <p>A version control system in Java that supports Git commands.</p>
+            <p class="card_link" id="proj_card_link_3">Click to read more!</p>
+          </div>
+          <div class="project_card" id="proj_card_4" onmouseover="showProjCardReadMore(event,'proj_card_link_4')">
+            <h2>ChocoPy Interpreter</h2>
+            <p><i>Tech Stack: Java, JFlex, CUP, Python</i></p>
+            <p><i>Tags: test-driven development, interpreters</i></p>
+            <p>A Python interpreter developed in Java. Parses Python code and produces code via RISC-V architecture.</p>
+            <p class="card_link" id="proj_card_link_4">Click to read more!</p>
+          </div>
+        </div>
+
+        <!-- make project contents hidden by default -->
+        <!-- <div class="project_contents">
+          <h2>Project Title</h2>
+          <p><i>Tech Stack: top text</i></p>
+          <p><i>Tags: middle text</i></p>
+          <p>Bottom text</p>
+          <p>Check out the code here! </p>
+          <a href="#" target="_blank"><img src="img/github.jpg"></a>
+        </div> -->
+
       
       </div>
 
@@ -248,7 +241,7 @@
         <img src="img/page_divider.jpg" alt="Page divider" class="divider">
       </div>
 
-      <p>Made using HTML, CSS, and JS by Evelyn Vo.</p>
+      <p>Made using HTML, CSS, and JavaScript by Evelyn Vo.</p>
       <p>Hosted via Github.</p>
       <br/>
       <br/>
