@@ -38,7 +38,7 @@
       <h1 id="name">Evelyn Vo</h1>
       <p>Welcome to my website!</p>
       <div class="contact-info">
-        <a href="mailto:vo.evelyn.tt@gmail.com"><img src="img/email.jpg"></a>
+        <a href="mailto:evelyn.vo.tt@gmail.com"><img src="img/email.jpg"></a>
         <a href="https://www.linkedin.com/in/ettvo" target="_blank"><img src="img/linkedin.jpg"></a>
         <a href="https://github.com/ettvo" target="_blank"><img src="img/github.jpg"></a>
         <a href="obj/resume.pdf" target="_blank"><img src="img/resume.jpg"></a>
@@ -50,9 +50,9 @@
 
       <div class="subsection" id="about">
         <h2>About Me</h2>
-        <p>I'm a software developer with experience in back-end and full-stack development. I love exploring different development niches but especially low-level design! I enjoy being challenged and solving puzzles, especially in collaborative environments.</p>
-        <p>With that said, I'm looking for Software Developer and QA roles.</p>
-        <p>In my free time, I enjoy tutoring, writing, and learning new languages. I've dabbled before in French and Japanese, and am currently focusing on Mandarin and Spanish.</p>
+        <p>I'm a software developer with experience in back-end and full-stack development and a background in IT. I love exploring different development niches but especially low-level design! I enjoy being challenged and solving puzzles, especially in collaborative environments.</p>
+        <!--<p>With that said, I'm looking for Software Developer and QA roles.</p>--> 
+        <p>In my free time, I enjoy tutoring, writing, and learning new languages. I've dabbled before in French, Japanese, Mandarin, and Spanish.</p>
       </div>
 
       <div class="divider">
@@ -63,28 +63,51 @@
         <h2>Work Experience</h2>
         <div class="work_tabs">
           <div class="work_tab_buttons">
+            <button onclick="openWorkTab(event, 'Subtle')" id="unselected_button"><img src="img/subtle-skywalk.png" alt="Subtle from Skywalk AI"></button>
+            <br/>
+            <button onclick="openWorkTab(event, 'Tessellations')" id="unselected_button"><img src="img/Tessellations_logo_mobile.png" alt="Tessellations Beneventi School IT"></button>
+            <br/>
             <button onclick="openWorkTab(event, '2ndWatch')" id="selected_button"><img src="img/2nd_watch.png" alt="2nd Watch"></button>
             <br/>
             <button onclick="openWorkTab(event, 'BerkeleyIT')" id="unselected_button"><img src="img/berkeley.jpg" alt="UC Berkeley IT"></button>
-          </div>
+            </div>
           <div class="work_info">
-            <div id="2ndWatch" style="display: contents" class="tabcontent">
+            <div id="Subtle" style="display: contents" class="tabcontent">
+              <h3>Research Staff</h3>
+              <p>I currently work as research staff on the team for Subtle Buds (also known as Skywalk AI). During my time here, I:</p>
+              <ul>
+                <li>User tested iOS and macOS app across 65 iterations. Documented 123 bugs (53 critical) and collaborated with engineering team produce fixes.</li>
+                <li>Coordinated 575 research participants through full study lifecycle, conducting interviews, scheduling sessions, and maintaining comprehensive documentation in Jira, Linear, and Excel.</li>
+                <li>Processed 881 hours of audio data for ML voice isolation model development, performing JSON validation and Audacity waveform analysis to ensure dataset integrity.</li>
+                <li>Produced daily QA reports for data collection team, flagging urgent firmware and data collection issues, then verifying fixes through systematic follow-up testing.</li>
+              </ul>
+            </div>
+            <div id="Tessellations" class="tabcontent">
+              <h3>IT Intern</h3>
+              <p>I currently work as an IT technician on the Tessellations IT team. During my time here, I:</p>
+              <ul>
+                <li>Engineered an automated ETL pipeline to transfer fiscal year-to-date financial data from QuickBooks into Google Sheets, with custom filtering/formatting and daily refresh.</li>
+                <li>Developed a Google Apps Script program to run scheduled, server-side data pulls and sync updates across spreadsheets, eliminating manual data entry.</li>
+                <li>Provisioned 48+ MacBooks, Chromebooks, and iPads for students and staff following security compliance standards.</li>
+              </ul>
+            </div>
+            <div id="2ndWatch" class="tabcontent">
               <h3>Data Insights Intern at 2nd Watch</h3>
               <p>In 2023, I interned at 2nd Watch (now known as Ollion), a data consulting firm that provides cloud solutions and information technology services to enterprises. I had so much fun learning and collaborating with the team there! While I was there, I:</p>
               <ul>
-                <li>Collaborated with data engineers and cloud architects to design and deploy an automated AWS infrastructure provisioning tool using Python and the AWS Serverless Framework, enabling secure, client-specific resource creation to support scalable data workflows.</li>
-                <li>Partnered with the client’s data team to automate and optimize their ETL pipeline for SQL Server data ingestion using Python, reducing load time by 72% and enhancing performance for downstream analytics.</li>
-                <li>Worked closely with HR and operations teams to develop an interactive hiring analytics dashboard in Power BI using DAX, providing visibility into recruitment trends and referral bonus tracking; automated data refresh via REST API integration.</li>
-                <li>Contributed to team’s intellectual capital by drafting internal documentation on pipeline optimization strategies, tooling, and development workflows. Participated in team training sessions and applied hands-on skills in Snowflake, SQL, Git, and AWS Cloud Practitioner topics, with a focus on cloud-based data architecture, modeling, and analytics delivery.</li>
+                <li>Automated client ETL pipeline for SQL Server data ingestion using Python, reducing load time by 72% and enhancing performance for downstream analytics.</li>
+                <li>Engineered serverless provisioning solution using Python and AWS Lambda to automatically generate IAM roles and resources from client credentials, eliminating manual configuration overhead.</li>
+                <li>Built and deployed interactive hiring analytics dashboard in Power BI using DAX to track recruitment trends and referral bonus payouts, with automated data refresh via REST API integration.</li>
+                <li>Authored internal documentation on ETL pipeline optimization strategies and development workflows.</li>  
               </ul>
             </div>
             <div id="BerkeleyIT" class="tabcontent">
               <h3>Training Lead and IT Technician at UC Berkeley IT</h3>
               <p>In 2022, I worked as an IT technician on the UC Berkeley IT team. While I was there, I:</p>
               <ul>
-                <li>Led new hire training initiatives, overseeing curriculum development and delivery. Partnered with HR and IT leadership to streamline onboarding processes and ensure compliance with security protocols.</li>
-                <li>Managed critical technical documentation for departmental projects and systems, supporting cross-functional teams in the execution of long-term IT infrastructure and operational initiatives.</li>
-                <li>Delivered frontline IT support leveraging ServiceNow, Active Directory, and network administration tools. Ensured prompt issue resolution, improved service efficiency, and contributed to maintaining enterprise-wide system integrity.</li>
+                <li>Led training program for 25+ new technicians, developing standardized curriculum on security protocols, ServiceNow workflows, and Active Directory administration.</li>
+                <li>Maintained comprehensive documentation for departmental systems and projects.</li>
+                <li>Resolved 10-30 support tickets daily via ServiceNow, leveraging Active Directory and network administration tools to provide frontline IT support.</li>
               </ul>
             </div>
           </div>
